@@ -6,6 +6,7 @@
 #include "Client.h"
 #include "Employee.h"
 #include "Admin.h"
+#include "Parser.h"
 #include "DataSourceInterface.h"
 using namespace std;
 class FileManager : public DataSourceInterface
@@ -49,49 +50,52 @@ public:
 	}
 
 	vector<Client> getAllClients() {
-		vector<string> clients;
-		string line;
+		vector<Client> clients;
 		ifstream file("Clients.txt");
 		if (file.is_open()) {
+			string line;
 			while (getline(file, line)) {
-				clients.push_back(line);
+				Client client = Parser::parseToClient(line);
+				clients.push_back(client);
 			}
 			file.close();
 		}
 		else {
-			cout << " Unable to open file\n";
+			cout << "Unable to open Clients.txt for reading." << std::endl;
 		}
 		return clients;
 	}
 
 	vector<Employee> getAllEmployees() {
-		vector<string> employees;
-		string line;
+		vector<Employee> employees;
 		ifstream file("Employees.txt");
 		if (file.is_open()) {
+			string line;
 			while (getline(file, line)) {
-				employees.push_back(line);
+				Employee employee = Parser::parseToEmployee(line);
+				employees.push_back(employee);
 			}
 			file.close();
 		}
 		else {
-			cout << " Unable to open file\n";
+			cout << "Unable to open Employees.txt for reading." << std::endl;
 		}
 		return employees;
 	}
 
 	vector<Employee> getAllAdmins() {
-		vector<string> admins;
-		string line;
-		ifstream file("Admin.txt");
+		vector<Employee> admins;
+		ifstream file("Admins.txt");
 		if (file.is_open()) {
+			string line;
 			while (getline(file, line)) {
-				admins.push_back(line);
+				Admin admin = Parser::parseToAdmin(line);
+				admins.push_back(admin);
 			}
 			file.close();
 		}
 		else {
-			cout << " Unable to open file\n";
+			cout << "Unable to open Admins.txt for reading." << std::endl;
 		}
 		return admins;
 	}
