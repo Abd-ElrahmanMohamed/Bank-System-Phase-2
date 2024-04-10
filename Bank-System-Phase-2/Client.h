@@ -13,6 +13,7 @@ public:
     Client(int id, string name, string password, double balance) : Person(id, name, password), balance(0) {
         setBalance(balance);
     }
+    
     //Setters:
     void setBalance(double balance) {
         if (Validation::ValidateBalance(balance))

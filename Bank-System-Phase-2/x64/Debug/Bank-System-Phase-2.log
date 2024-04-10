@@ -4,7 +4,8 @@
   DataSourceInterface.cpp
   Employee.cpp
   FileManager.cpp
+  Parser.cpp
   Person.cpp
   Validation.cpp
   Generating Code...
-  Bank-System-Phase-2.vcxproj -> C:\Users\Administrator\source\repos\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe
+  Bank-System-Phase-2.vcxproj -> C:\Users\Administrator\source\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe
