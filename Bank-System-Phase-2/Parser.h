@@ -24,11 +24,8 @@ public:
 
     static Client parseToClient(string& line) {
         vector<string> tokens = split(line);
-        //client = Client(stoi(tokens[0]), tokens[1], tokens[2], stod(tokens[3]));
-      //set Ê «·‹   Client client = Client(0,"","",0); €Ì Õ«·… «” Œœ«„ «·Õ· œÂ Â‰„”Õ «·‹ 
         Client client = Client(0,"","",0);
         if (tokens.size() == 4) {
-
             client.setID( stoi(tokens[0]));
             client.setName(tokens[1]);
             client.setPassword (tokens[2]);
