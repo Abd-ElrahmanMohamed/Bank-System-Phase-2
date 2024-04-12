@@ -7,36 +7,20 @@
       "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\FilesHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\FilesHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Bank-System-Phase-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Bank-System-Phase-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Validation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Validation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Bank-System-Phase-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B9EBCF3-5CCE-431C-B1B8-A7675E886FA5}|Bank-System-Phase-2\\Bank-System-Phase-2.vcxproj|solutionrelative:Bank-System-Phase-2\\Bank-System-Phase-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,98 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Bank-System-Phase-2.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Bank-System-Phase-2.cpp",
               "RelativeDocumentMoniker": "Bank-System-Phase-2\\Bank-System-Phase-2.cpp",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Bank-System-Phase-2.cpp",
               "RelativeToolTip": "Bank-System-Phase-2\\Bank-System-Phase-2.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-08T01:03:42.076Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Validation.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Validation.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Validation.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Validation.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Validation.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T01:05:03.435Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Person.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Person.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Person.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Person.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Person.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T01:05:55.05Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Client.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Client.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Client.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Client.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Client.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T01:13:34.805Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Employee.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Employee.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Employee.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Employee.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Employee.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T01:13:57.689Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Admin.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Admin.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Admin.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Admin.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Admin.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-08T01:14:17.507Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DataSourceInterface.h",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\DataSourceInterface.h",
               "RelativeDocumentMoniker": "Bank-System-Phase-2\\DataSourceInterface.h",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\DataSourceInterface.h",
               "RelativeToolTip": "Bank-System-Phase-2\\DataSourceInterface.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-08T01:15:00.023Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Parser.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Parser.h",
+              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Parser.h",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Parser.h",
+              "RelativeToolTip": "Bank-System-Phase-2\\Parser.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T14:25:15.322Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilesHelper.h",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\FilesHelper.h",
+              "RelativeDocumentMoniker": "Bank-System-Phase-2\\FilesHelper.h",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\FilesHelper.h",
+              "RelativeToolTip": "Bank-System-Phase-2\\FilesHelper.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-12T10:53:22.606Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -147,23 +96,9 @@
               "RelativeDocumentMoniker": "Bank-System-Phase-2\\FileManager.h",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\FileManager.h",
               "RelativeToolTip": "Bank-System-Phase-2\\FileManager.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAACAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-09T15:55:08.403Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Parser.h",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Parser.h",
-              "RelativeDocumentMoniker": "Bank-System-Phase-2\\Parser.h",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Bank-System-Phase-2\\Bank-System-Phase-2\\Parser.h",
-              "RelativeToolTip": "Bank-System-Phase-2\\Parser.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-09T14:25:15.322Z",
               "IsPinned": true,
               "EditorCaption": ""
             }

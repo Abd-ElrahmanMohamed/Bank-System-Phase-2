@@ -4,8 +4,109 @@
   DataSourceInterface.cpp
   Employee.cpp
   FileManager.cpp
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,22): error C2662: 'int Person::getID(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,21):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(35,9):
+  see declaration of 'Person::getID'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,22):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,18): error C2088: built-in operator '<<' cannot be applied to an operand of type 'std::ofstream'
+  (compiling source file 'FileManager.cpp')
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,42): error C2662: 'std::string Person::getName(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,41):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(38,12):
+  see declaration of 'Person::getName'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,42):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,64): error C2662: 'std::string Person::getPassword(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,63):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(41,12):
+  see declaration of 'Person::getPassword'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,64):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,90): error C2662: 'double Client::getBalance(void)': cannot convert 'this' pointer from 'const Client' to 'Client &'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,89):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Client.h(25,12):
+  see declaration of 'Client::getBalance'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,90):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FileManager.h(27,10): error C2555: 'FileManager::getAllClients': overriding virtual function return type differs and is not covariant from 'DataSourceInterface::getAllClients'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\DataSourceInterface.h(19,25):
+  see declaration of 'DataSourceInterface::getAllClients'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FileManager.h(31,10): error C2555: 'FileManager::getAllEmployees': overriding virtual function return type differs and is not covariant from 'DataSourceInterface::getAllEmployees'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\DataSourceInterface.h(21,27):
+  see declaration of 'DataSourceInterface::getAllEmployees'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FileManager.h(35,10): error C2555: 'FileManager::getAllAdmins': overriding virtual function return type differs and is not covariant from 'DataSourceInterface::getAllAdmins'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\DataSourceInterface.h(23,27):
+  see declaration of 'DataSourceInterface::getAllAdmins'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FileManager.h(24,22): error C2039: 'saveAdmin': is not a member of 'FilesHelper'
+  (compiling source file 'FileManager.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(10,7):
+  see declaration of 'FilesHelper'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FileManager.h(24,22): error C3861: 'saveAdmin': identifier not found
+  (compiling source file 'FileManager.cpp')
+  
+  FilesHelper.cpp
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,22): error C2662: 'int Person::getID(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FilesHelper.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,21):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(35,9):
+  see declaration of 'Person::getID'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,22):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,18): error C2088: built-in operator '<<' cannot be applied to an operand of type 'std::ofstream'
+  (compiling source file 'FilesHelper.cpp')
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,42): error C2662: 'std::string Person::getName(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FilesHelper.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,41):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(38,12):
+  see declaration of 'Person::getName'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,42):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,64): error C2662: 'std::string Person::getPassword(void)': cannot convert 'this' pointer from 'const Client' to 'Person &'
+  (compiling source file 'FilesHelper.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,63):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Person.h(41,12):
+  see declaration of 'Person::getPassword'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,64):
+  while trying to match the argument list '()'
+  
+C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,90): error C2662: 'double Client::getBalance(void)': cannot convert 'this' pointer from 'const Client' to 'Client &'
+  (compiling source file 'FilesHelper.cpp')
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,89):
+  Conversion loses qualifiers
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\Client.h(25,12):
+  see declaration of 'Client::getBalance'
+  C:\Users\Administrator\source\repos\Bank-System-Phase-2\Bank-System-Phase-2\FilesHelper.h(41,90):
+  while trying to match the argument list '()'
+  
   Parser.cpp
   Person.cpp
   Validation.cpp
   Generating Code...
-  Bank-System-Phase-2.vcxproj -> C:\Users\Administrator\source\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe

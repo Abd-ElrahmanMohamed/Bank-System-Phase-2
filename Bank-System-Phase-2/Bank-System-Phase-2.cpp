@@ -8,16 +8,17 @@
 using namespace std;
 int main()
 {
-    cout << "|<<<<WELCOME>>>>|\n" << endl;
-    Client client(101, "Mohamed", "password", 2000);
-    client.display();
-    cout << "==================================\n" << endl;
+    // Create Clients.txt
+    ofstream clientsFile("Clients.txt");
+    clientsFile.close();
 
-    Employee employee(201, "AbdElrahman", "password", 6000);
-    employee.display();
-    cout << "==================================\n" << endl;
+    // Create Employee.txt
+    ofstream employeeFile("Employee.txt");
+    employeeFile.close();
 
-    Admin admin(301, "AdminUser", "adminpass", 10000);
-    admin.display();
+    // Create Admin.txt
+    ofstream adminFile("Admin.txt");
+    adminFile.close();
+
     return 0;
 }
