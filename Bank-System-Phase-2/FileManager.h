@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <fstream>
 #include "Client.h"
 #include "Employee.h"
 #include "Admin.h"
@@ -18,12 +17,11 @@ public:
     }
 
     void addEmployee(Employee employee) {
-        FilesHelper::saveEmployee(0,"",employee);
+        FilesHelper::saveEmployee("Employee.txt", "EmployeeLastId.txt",employee);
     }
 
-
-    void addAdmin(const Admin& admin) {
-        FilesHelper::saveEmployee(admin);
+    void addAdmin(Admin admin) {
+        FilesHelper::saveEmployee("Admin.txt", "AdminLastId.txt", admin);
     }
 
     void getClients() {
@@ -39,7 +37,7 @@ public:
     }
 
     void removeAllClients() {
-        FilesHelper::clearFile("Clients.txt", "ClientsLastId.txt");
+        FilesHelper::clearFile("Clients.txt", "ClientLastId.txt");
     }
 
     void removeAllEmployees() {

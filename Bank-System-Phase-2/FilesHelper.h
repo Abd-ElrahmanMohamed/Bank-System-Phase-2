@@ -48,17 +48,17 @@ public:
         }
     }
 
-    static void saveEmployee(string employeeFile, string lastIdFile, Employee employee) {
+    static void saveEmployee(string fileName, string lastIdFile, Employee employee) {
         int id = getLast(lastIdFile) + 1;
         saveLast(lastIdFile, id);
-        ofstream file("Employee.txt", ios::app);
+        ofstream file(fileName, ios::app);
         if (file.is_open()) {
-            file << id << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
+            file << employee.getID() << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
             file.close();
-            cout << "Employee added successfully." << endl;
+            cout << "Added successfully." << endl;
         }
         else {
-            cout << "Error: Unable to open " << employeeFile << " for writing." << endl;
+            cout << "Error: Unable to open " << fileName << " for writing." << endl;
         }
     }
 
@@ -81,7 +81,7 @@ public:
 
     static vector<Employee> getAllEmployees() {
         vector<Employee> employees;
-        ifstream file("Employees.txt");
+        ifstream file("Employee.txt");
         if (file.is_open()) {
             string line;
             while (getline(file, line)) {
@@ -98,7 +98,7 @@ public:
 
     static vector<Employee> getAllAdmins() {
         vector<Employee> admins;
-        ifstream file("Admins.txt");
+        ifstream file("Admin.txt");
         if (file.is_open()) {
             string line;
             while (getline(file, line)) {
@@ -114,7 +114,12 @@ public:
     }
 
     static void clearFile(string fileName, string lastIdFile) {
-    
+        ofstream file(fileName,ios::trunc);
+        file.close();
+        cout << "File " << fileName << " cleared successfully." << endl;
+
+        ofstream idFile(lastIdFile, ios::trunc);
+        idFile.close();
+        cout << "File " << lastIdFile << " cleared successfully." << endl;
     }
 };
-
