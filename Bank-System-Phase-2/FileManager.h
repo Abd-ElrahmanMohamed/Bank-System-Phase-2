@@ -18,40 +18,35 @@ public:
     }
 
     void addEmployee(Employee employee) {
-        FilesHelper::saveEmployee(employee);
+        FilesHelper::saveEmployee();
     }
 
     void addAdmin(Admin admin) {
-        FilesHelper::saveAdmin(admin);
+       FilesHelper::saveEmployee();
     }
 
-    vector<Client> getClients() {
-        return FilesHelper::getAllClients();
+    void getClients() {
+        FilesHelper::getAllClients();
     }
 
-    vector<Employee> getEmployees() {
-        return FilesHelper::getAllEmployees();
+    void getEmployees() {
+        FilesHelper::getAllEmployees();
     }
 
-    vector<Employee> getAdmins() {
-        return FilesHelper::getAllAdmins();
+    void getAdmins() {
+        FilesHelper::getAllAdmins();
     }
 
     void removeAllClients() {
-        ofstream File("Clients.txt");
-        ofstream IdFile("EmployeeLastId.txt");
-        File.close();
-        IdFile.close();
-
-        FilesHelper::clearFile("Clients.txt", "ClientsLastId.txt");
+        FilesHelper::clearFile();
     }
 
     void removeAllEmployees() {
 
-        FilesHelper::clearFile("Employees.txt");
+        FilesHelper::clearFile();
     }
 
     void removeAllAdmins() {
-        FilesHelper::clearFile("Admins.txt");
+        FilesHelper::clearFile();
     }
 };

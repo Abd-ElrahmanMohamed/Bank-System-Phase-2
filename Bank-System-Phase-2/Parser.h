@@ -10,7 +10,7 @@ using namespace std;
 class Parser {
 public:
     //Methods:
-    static vector<string> split(string& line) {
+    static vector<string> split(string line) {
         vector<string> tokens;
         istringstream iss(line);
         string token;
@@ -20,7 +20,7 @@ public:
         return tokens;
     }
 
-    static Client parseToClient(string& line) {
+    static Client parseToClient(string line) {
         vector<string> tokens = split(line);
         Client client = Client(0, "", "", 0);
         if (tokens.size() == 4) {
@@ -32,7 +32,7 @@ public:
         return client;
     }
 
-    static Employee parseToEmployee(string& line) {
+    static Employee parseToEmployee(string line) {
         vector<string> tokens = split(line);
         Employee employee = Employee(0, "", "", 0);
         if (tokens.size() == 4) {

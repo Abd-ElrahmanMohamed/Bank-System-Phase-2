@@ -14,15 +14,25 @@ public:
 	//Methods:
     static void saveLast(string fileName, int id) {
         ofstream file(fileName);
-        file << id;
-        file.close();
+        if (file.is_open()) {
+            file << id;
+            file.close();
+        }
+        else {
+            cout << "Error: Unable to open file " << fileName << " for writing." << endl;
+        }
     }
 
     static int getLast(string fileName) {
+        int id = 0;
         ifstream file(fileName);
-        int id;
-        file >> id;
-        file.close();
+        if (file.is_open()) {
+            file >> id;
+            file.close();
+        }
+        else {
+            cout << "Error: Unable to open file " << fileName << " for reading." << endl;
+        }
         return id;
     }
 
@@ -38,42 +48,18 @@ public:
         }
     }
 
-    static void saveEmployee(string fileName, string lastIdFile, Employee employee) {
+    static void saveEmployee(string employeeFile, string lastIdFile, Employee employee) {
         int id = getLast(lastIdFile) + 1;
         saveLast(lastIdFile, id);
+        ofstream file("Employee.txt", ios::app);
         if (file.is_open()) {
-        ofstream file(fileName, std::ios::app);
-        file << id << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
-        file.close();
-        cout << " Client added successfully.\n";
-        }
-        else {
-            cout << " Unable to open Clients.txt for writing.\n";
-        }
-
-
-
-
-
-        /*ofstream file("Employee.txt", ios::app);
-        if (file.is_open()) {
-            file << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
+            file << id << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
             file.close();
-            cout << " Client added successfully.\n";
+            cout << "Employee added successfully." << endl;
         }
         else {
-            cout << " Unable to open Clients.txt for writing.\n";
+            cout << "Error: Unable to open " << employeeFile << " for writing." << endl;
         }
-        ofstream file("EmployeeLastId.txt", ios::app);
-        if (file.is_open()) {
-            file << employee.getID()  << endl;
-            file.close();
-            cout << " Employee ID added successfully.\n";
-        }
-        else {
-            cout << " Unable to open EmployeeLastId.txt for writing.\n";
-        }*/
-
     }
 
     static vector<Client> getAllClients() {
@@ -88,7 +74,7 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Clients.txt for reading." << std::endl;
+            cout << "Unable to open Clients.txt for reading." << endl;
         }
         return clients;
     }
@@ -105,7 +91,7 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Employees.txt for reading." << std::endl;
+            cout << "Unable to open Employees.txt for reading." << endl;
         }
         return employees;
     }
@@ -122,13 +108,13 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Admins.txt for reading." << std::endl;
+            cout << "Unable to open Admins.txt for reading." << endl;
         }
         return admins;
     }
 
     static void clearFile(string fileName, string lastIdFile) {
-       
+    
     }
 };
 
