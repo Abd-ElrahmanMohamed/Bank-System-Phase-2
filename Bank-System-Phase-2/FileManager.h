@@ -12,17 +12,18 @@ using namespace std;
 class FileManager : public DataSourceInterface
 {
 public:
-	//Methods: 
+    //Methods: 
     void addClient(Client client) {
         FilesHelper::saveClient(client);
     }
 
     void addEmployee(Employee employee) {
-        FilesHelper::saveEmployee();
+        FilesHelper::saveEmployee(0,"",employee);
     }
 
-    void addAdmin(Admin admin) {
-       FilesHelper::saveEmployee();
+
+    void addAdmin(const Admin& admin) {
+        FilesHelper::saveEmployee(admin);
     }
 
     void getClients() {
@@ -38,15 +39,14 @@ public:
     }
 
     void removeAllClients() {
-        FilesHelper::clearFile();
+        FilesHelper::clearFile("Clients.txt", "ClientsLastId.txt");
     }
 
     void removeAllEmployees() {
-
-        FilesHelper::clearFile();
+        FilesHelper::clearFile("Employee.txt", "EmployeeLastId.txt");
     }
 
     void removeAllAdmins() {
-        FilesHelper::clearFile();
+        FilesHelper::clearFile("Admin.txt", "AdminLastId.txt");
     }
 };

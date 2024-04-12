@@ -38,7 +38,7 @@ public:
         if (tokens.size() == 4) {
             employee.setID(stoi(tokens[0]));
             employee.setName(tokens[1]);
-            employee.setID(stoi(tokens[2]));
+            employee.setPassword(tokens[2]);
             employee.setSalary(stod(tokens[3]));
         }
         return employee;
