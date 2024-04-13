@@ -8,7 +8,7 @@
 #include "DataSourceInterface.h"
 #include "FilesHelper.h"
 using namespace std;
-class FileManager : public DataSourceInterface
+class FileManager 
 {
 public:
     //Methods: 

@@ -11,8 +11,8 @@ private:
 public:
     //Constructors:
     Admin(int id, string name, string password, double salary) : Employee(id, name, password, salary) {}
-    //methods
-  
+    
+    //Methods:
     void addEmployee(Employee& employee) {
         employees.push_back (employee);
     }
@@ -29,21 +29,23 @@ public:
     void listEmployee() {
         cout << "Employee:\n";
         for (auto& employee : employees) {
-            cout << "ID: " << employee.getID() << ", Name: " << employee.getName() << ", Balance: " << employee.getSalary() << endl;
+            cout << " ID : " << employee.getID() << endl;
+            cout << " Name : " << employee.getName() << endl;
+            cout << " Balance : " << employee.getSalary() << "$" << endl;
         }
     }
 
     void editEmployee(int id, string name, string password, double salary) {
-        for (auto& employee : employees) {
-            if (employee.getID() == id) {
-                employee.setName(name);
-                employee.setPassword(password);
-                employee.setSalary(salary);
-                cout << "Employee information updated successfully.\n";
+        for (auto& Employee : employees) {
+            if (Employee.getID() == id) {
+                Employee.setName(name);
+                Employee.setPassword(password);
+                Employee.setSalary(salary);
+                cout << " Employee information updated successfully." << endl;
             }
             else
             {
-                cout << "Employee not found\n";
+                cout << " Employee not found." << endl;
             }
         }
     }

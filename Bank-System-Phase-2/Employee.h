@@ -10,7 +10,7 @@ class Employee : public Person {
 protected:
     //Attributs:
     double salary;
-    vector <Client> Clients;
+    vector <Client> clients;
 public:
     //Consttructors:
     Employee(int id, string name, string password, double salary) : Person(id, name, password), salary(0) {
@@ -33,13 +33,12 @@ public:
         cout << " Salary : " << getSalary() << "$" << endl;
     }
 
-
     void addClient(Client& Client) {
-        Clients.push_back (Client);
+        clients.push_back (Client);
     }
 
     Client* SearchClient(int id) {
-        for (auto& Client : Clients) {
+        for (auto& Client : clients) {
             if (Client.getID() == id) {
                 return& Client;
             }
@@ -49,24 +48,24 @@ public:
 
     void listClients() {
         cout << "Clients:\n";
-        for (auto& Client : Clients) {
-            cout << "ID: " << Client.getID() << ", Name: " << Client.getName() << ", Balance: " << Client.getBalance() << endl;
+        for (auto& Client : clients) {
+            cout << " ID : " << Client.getID() << endl;
+            cout << " Name : " << Client.getName() << endl;
+            cout << " Balance : " << Client.getBalance() << "$" << endl;
         }
     }
 
     void editClient(int id, string name, string password, double balance) {
-        for (auto& Client : Clients) {
+        for (auto& Client : clients) {
             if (Client.getID() == id) {
                 Client.setName(name);
                 Client.setPassword(password);
                 Client.setBalance(balance);
-                cout << "Client information updated successfully.\n";
+                cout << " Client information updated successfully." << endl;
             }
             else
-            {
-                cout << "Client not found\n";
-            }
+                cout << " Client not found." << endl;
+            
         }
     }
-
 };

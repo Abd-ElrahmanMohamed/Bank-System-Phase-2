@@ -19,7 +19,7 @@ public:
             file.close();
         }
         else {
-            cout << "Error: Unable to open file " << fileName << " for writing." << endl;
+            cout << " Error: Unable to open file " << fileName << " for writing." << endl;
         }
     }
 
@@ -31,7 +31,7 @@ public:
             file.close();
         }
         else {
-            cout << "Error: Unable to open file " << fileName << " for reading." << endl;
+            cout << " Error: Unable to open file " << fileName << " for reading." << endl;
         }
         return id;
     }
@@ -41,10 +41,10 @@ public:
         if (file.is_open()) {
             file << client.getID() << "#" << client.getName() << "#" << client.getPassword() << "#" << client.getBalance() << endl;
             file.close();
-            cout << " Client added successfully.\n";
+            cout << " Client added successfully." << endl;
         }
         else {
-            cout << " Unable to open Clients.txt for writing.\n";
+            cout << " Unable to open Clients.txt for writing." << endl;
         }
     }
 
@@ -55,10 +55,10 @@ public:
         if (file.is_open()) {
             file << employee.getID() << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
             file.close();
-            cout << "Added successfully." << endl;
+            cout << " Added successfully." << endl;
         }
         else {
-            cout << "Error: Unable to open " << fileName << " for writing." << endl;
+            cout << " Error: Unable to open " << fileName << " for writing." << endl;
         }
     }
 
@@ -74,7 +74,7 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Clients.txt for reading." << endl;
+            cout << " Unable to open Clients.txt for reading." << endl;
         }
         return clients;
     }
@@ -91,7 +91,7 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Employees.txt for reading." << endl;
+            cout << " Unable to open Employees.txt for reading." << endl;
         }
         return employees;
     }
@@ -108,7 +108,7 @@ public:
             file.close();
         }
         else {
-            cout << "Unable to open Admins.txt for reading." << endl;
+            cout << " Unable to open Admins.txt for reading." << endl;
         }
         return admins;
     }
@@ -116,10 +116,10 @@ public:
     static void clearFile(string fileName, string lastIdFile) {
         ofstream file(fileName,ios::trunc);
         file.close();
-        cout << "File " << fileName << " cleared successfully." << endl;
+        cout << " File " << fileName << " cleared successfully." << endl;
 
         ofstream idFile(lastIdFile, ios::trunc);
         idFile.close();
-        cout << "File " << lastIdFile << " cleared successfully." << endl;
+        cout << " File " << lastIdFile << " cleared successfully." << endl;
     }
 };
