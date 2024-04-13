@@ -6,7 +6,7 @@
   FileManager.cpp
   FilesHelper.cpp
   Parser.cpp
-  Person.cpp
   Validation.cpp
   Generating Code...
-  Bank-System-Phase-2.vcxproj -> C:\Users\Administrator\source\repos\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe
+  LINK : D:\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe not found or not built by the last incremental link; performing full link
+  Bank-System-Phase-2.vcxproj -> D:\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe
