@@ -28,7 +28,6 @@ int main() {
     fileManager.getAllEmployees();
     fileManager.getAllAdmins();
 
-    cout << "==================================\n" << endl;
 
     fileManager.removeAllClients();
     fileManager.removeAllEmployees();

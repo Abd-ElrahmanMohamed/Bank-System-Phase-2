@@ -68,12 +68,12 @@ public:
             string line;
             while (getline(file, line)) {
                 Client client = Parser::parseToClient(line);
-                cout << "\nClient Info : " << endl;
+                cout << "Client Info : " << endl;
                 cout << "ID : " << client.getID() << endl;
                 cout << "Name : " << client.getName() << endl;
                 cout << "Password : " << client.getPassword() << endl;
                 cout << "Balance : " << client.getBalance() << "$" << endl;
-
+                cout << "==================================\n" << endl;
             }
             file.close();
         }
@@ -88,11 +88,12 @@ public:
             string line;
             while (getline(file, line)) {
                 Employee employee = Parser::parseToEmployee(line);
-                cout << "\nEmployee Info : " << endl;
+                cout << "Employee Info : " << endl;
                 cout << "ID : " << employee.getID() << endl;
                 cout << "Name : " << employee.getName() << endl;
                 cout << "Password : " << employee.getPassword() << endl;
                 cout << "Balance : " << employee.getSalary() << "$" << endl;
+                cout << "==================================\n" << endl;
             }
             file.close();
         }
@@ -107,11 +108,12 @@ public:
             string line;
             while (getline(file, line)) {
                 Admin admin = Parser::parseToAdmin(line);
-                cout << "\nAdmin Info : " << endl;
+                cout << "Admin Info : " << endl;
                 cout << "ID : " << admin.getID() << endl;
                 cout << "Name : " << admin.getName() << endl;
                 cout << "Password : " << admin.getPassword() << endl;
                 cout << "Balance : " << admin.getSalary() << "$" << endl;
+                cout << "==================================\n" << endl;
             }
             file.close();
         }
