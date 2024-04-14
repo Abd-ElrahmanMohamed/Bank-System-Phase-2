@@ -24,9 +24,9 @@ int main() {
 
     cout << "==================================\n" << endl;
 
-    fileManager.getClients();
-    fileManager.getEmployees();
-    fileManager.getAdmins();
+    fileManager.getAllClients();
+    fileManager.getAllEmployees();
+    fileManager.getAllAdmins();
 
     cout << "==================================\n" << endl;
 

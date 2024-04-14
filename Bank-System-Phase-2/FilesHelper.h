@@ -19,21 +19,21 @@ public:
             file.close();
         }
         else {
-            cout << " Error: Unable to open file " << fileName << " for writing." << endl;
+            cerr << "Unable to open file: " << fileName << endl;
         }
     }
 
     static int getLast(string fileName) {
-        int id = 0;
+        int lastId = 0;
         ifstream file(fileName);
         if (file.is_open()) {
-            file >> id;
+            file >> lastId;
             file.close();
         }
         else {
-            cout << " Error: Unable to open file " << fileName << " for reading." << endl;
+            cerr << "Unable to open file: " << fileName << endl;
         }
-        return id;
+        return lastId;
     }
 
     static void saveClient(Client& client) {
@@ -62,55 +62,62 @@ public:
         }
     }
 
-    static vector<Client> getAllClients() {
-        vector<Client> clients;
+    static void getClients() {
         ifstream file("Clients.txt");
         if (file.is_open()) {
             string line;
             while (getline(file, line)) {
                 Client client = Parser::parseToClient(line);
-                clients.push_back(client);
+                cout << "\nClient Info : " << endl;
+                cout << "ID : " << client.getID() << endl;
+                cout << "Name : " << client.getName() << endl;
+                cout << "Password : " << client.getPassword() << endl;
+                cout << "Balance : " << client.getBalance() << "$" << endl;
+
             }
             file.close();
         }
         else {
-            cout << " Unable to open Clients.txt for reading." << endl;
+            cout << "Unable to open file: Clients.txt" << endl;
         }
-        return clients;
     }
 
-    static vector<Employee> getAllEmployees() {
-        vector<Employee> employees;
+    static void getEmployees() {
         ifstream file("Employee.txt");
         if (file.is_open()) {
             string line;
             while (getline(file, line)) {
                 Employee employee = Parser::parseToEmployee(line);
-                employees.push_back(employee);
+                cout << "\nEmployee Info : " << endl;
+                cout << "ID : " << employee.getID() << endl;
+                cout << "Name : " << employee.getName() << endl;
+                cout << "Password : " << employee.getPassword() << endl;
+                cout << "Balance : " << employee.getSalary() << "$" << endl;
             }
             file.close();
         }
         else {
-            cout << " Unable to open Employees.txt for reading." << endl;
+            cout << "Unable to open file: Employee.txt" << endl;
         }
-        return employees;
     }
 
-    static vector<Employee> getAllAdmins() {
-        vector<Employee> admins;
+    static void getAdmins() {
         ifstream file("Admin.txt");
         if (file.is_open()) {
             string line;
             while (getline(file, line)) {
                 Admin admin = Parser::parseToAdmin(line);
-                admins.push_back(admin);
+                cout << "\nAdmin Info : " << endl;
+                cout << "ID : " << admin.getID() << endl;
+                cout << "Name : " << admin.getName() << endl;
+                cout << "Password : " << admin.getPassword() << endl;
+                cout << "Balance : " << admin.getSalary() << "$" << endl;
             }
             file.close();
         }
         else {
-            cout << " Unable to open Admins.txt for reading." << endl;
+            cout << "Unable to open file: Admin.txt" << endl;
         }
-        return admins;
     }
 
     static void clearFile(string fileName, string lastIdFile) {

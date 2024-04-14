@@ -24,16 +24,19 @@ public:
         FilesHelper::saveEmployee("Admin.txt", "AdminLastId.txt", admin);
     }
 
-    void getClients() {
-        FilesHelper::getAllClients();
+    vector<Client> getAllClients() {
+        FilesHelper::getClients();
+        return vector<Client>();
     }
 
-    void getEmployees() {
-        FilesHelper::getAllEmployees();
+    vector<Employee> getAllEmployees() {
+        FilesHelper::getEmployees();
+        return vector<Employee>();
     }
 
-    void getAdmins() {
-        FilesHelper::getAllAdmins();
+    vector<Admin> getAllAdmins() {
+        FilesHelper::getAdmins();
+        return vector<Admin>(); 
     }
 
     void removeAllClients() {

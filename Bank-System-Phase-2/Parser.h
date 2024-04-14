@@ -11,49 +11,39 @@ class Parser {
 public:
     //Methods:  
     static vector<string> split(string line) {
-        vector<string> tokens;
-        istringstream iss(line);
-        string token;
-        while (getline(iss, token, '#')) {
-            tokens.push_back(token);
+        vector<string> result;
+        stringstream ss(line);
+        string item;
+        while (getline(ss, item, '#')) {
+            result.push_back(item);
         }
-        return tokens;
+        return result;
     }
 
     static Client parseToClient(string line) {
-            vector<string> tokens = split(line);
-            Client client = Client(0, "", "", 0);
-            if (tokens.size() == 4) {
-                client.setID(stoi(tokens[0]));
-                client.setName(tokens[1]);
-                client.setPassword(tokens[2]);
-                client.setBalance(stod(tokens[3]));
-            }
-            return client;
-        }
+        vector<string> tokens = split(line);
+        int id = stoi(tokens[0]);
+        string name = tokens[1];
+        string password = tokens[2];
+        double balance = stod(tokens[3]);
+        return Client(id, name, password, balance);
+    }
 
-        static Employee parseToEmployee(string line) {
-            vector<string> tokens = split(line);
-            Employee employee = Employee(0, "", "", 0);
-            if (tokens.size() == 4) {
-                employee.setID(stoi(tokens[0]));
-                employee.setName(tokens[1]);
-                employee.setPassword(tokens[2]);
-                employee.setSalary(stod(tokens[3]));
-            }
-            return employee;
-        }
+    static Employee parseToEmployee(string line) {
+        vector<string> tokens = split(line);
+        int id = stoi(tokens[0]);
+        string name = tokens[1];
+        string password = tokens[2];
+        double salary = stod(tokens[3]);
+        return Employee(id, name, password, salary);
+    }
 
-        static Admin parseToAdmin(string& line) {
-            vector<string> tokens = split(line);
-            Admin admin = Admin(0, "", "", 0);
-            if (tokens.size() == 4) {
-                admin.setID(stoi(tokens[0]));
-                admin.setName(tokens[1]);
-                admin.setPassword(tokens[2]);
-                admin.setSalary(stod(tokens[3]));
-            }
-            return admin;
-        }
+    static Admin parseToAdmin(string line) {
+        vector<string> tokens = split(line);
+        int id = stoi(tokens[0]);
+        string name = tokens[1];
+        string password = tokens[2];
+        double salary = stod(tokens[3]);
+        return Admin(id, name, password, salary);
+    }
 };
-    

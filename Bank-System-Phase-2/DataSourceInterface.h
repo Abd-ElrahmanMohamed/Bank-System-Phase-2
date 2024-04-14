@@ -15,11 +15,11 @@ public:
 
     virtual void addAdmin(Admin) = 0;
 
-    virtual void getAllClients() = 0;
+    virtual vector<Client> getAllClients() = 0;
 
-    virtual void getAllEmployees() = 0;
+    virtual vector<Employee>getAllEmployees() = 0;
 
-    virtual void getAllAdmins() = 0;
+    virtual vector<Employee>getAllAdmins() = 0;
 
     virtual void removeAllClients() = 0;
 
