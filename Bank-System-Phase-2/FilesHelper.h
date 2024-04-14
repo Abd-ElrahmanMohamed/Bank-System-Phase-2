@@ -37,6 +37,8 @@ public:
     }
 
     static void saveClient(Client& client) {
+        int id = getLast("ClientLastId.txt") + 1;
+        saveLast("ClientLastId.txt", id);
         ofstream file("Clients.txt", ios::app);
         if (file.is_open()) {
             file << client.getID() << "#" << client.getName() << "#" << client.getPassword() << "#" << client.getBalance() << endl;

@@ -8,7 +8,7 @@
 #include "DataSourceInterface.h"
 #include "FilesHelper.h"
 using namespace std;
-class FileManager 
+class FileManager : public DataSourceInterface
 {
 public:
     //Methods: 
@@ -34,9 +34,9 @@ public:
         return vector<Employee>();
     }
 
-    vector<Admin> getAllAdmins() {
+    vector<Employee> getAllAdmins() {
         FilesHelper::getAdmins();
-        return vector<Admin>(); 
+        return vector<Employee>(); 
     }
 
     void removeAllClients() {

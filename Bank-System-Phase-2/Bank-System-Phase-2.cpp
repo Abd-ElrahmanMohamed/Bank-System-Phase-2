@@ -29,9 +29,9 @@ int main() {
     fileManager.getAllAdmins();
 
 
-    fileManager.removeAllClients();
-    fileManager.removeAllEmployees();
-    fileManager.removeAllAdmins();
+    //fileManager.removeAllClients();
+    //fileManager.removeAllEmployees();
+    //fileManager.removeAllAdmins();
 
     return 0;
 }
