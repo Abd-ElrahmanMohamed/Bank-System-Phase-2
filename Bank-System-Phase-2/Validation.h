@@ -5,11 +5,20 @@ using namespace std;
 class Validation {
 public:
     //Methods:
-    static bool ValidateName(const string& name) {
-        return name.size() >= 5 && name.size() <= 20 && Alphapatic(name);
+    static bool ValidateName(string name) {
+        if (!(name.size() >= 5 && name.size() <= 20)) {
+            return false;
+        }
+
+        for (int i = 0; i < name.size(); i++) {
+            if (!(name[i] >= 'a' && name[i] <= 'z' || name[i] >= 'A' && name[i] <= 'Z')) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    static bool ValidatePassword(const string& password) {
+    static bool ValidatePassword(string password) {
         return password.size() >= 8 && password.size() <= 20;
     }
 
@@ -19,14 +28,5 @@ public:
 
     static bool ValidateSalary(double salary) {
         return salary >= 5000;
-    }
-
-    static bool Alphapatic(const string& newName) {
-        for (char n : newName) {
-            if (!isalpha(n)) {
-                return false;
-            }
-        }
-        return true;
     }
 };

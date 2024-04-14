@@ -13,12 +13,53 @@ int main() {
     cout << "|<<<<WELCOME>>>>|\n" << endl;
     
     Client client(101, "Mohamed", "password", 2000);
-    Employee employee(201, "AbdElrahman", "password", 6000);
-    Admin admin(301, "AdminUser", "adminpass", 10000);
-
+    client.display();
     cout << "==================================\n" << endl;
 
-    fileManager.addClient(client);
+    Employee employee(201, "AbdElrahman", "password", 6000);
+    employee.display();
+    cout << "==================================\n" << endl;
+
+    employee.editClient(101, "Mohamedd", "passwordd", 20000);
+    
+    
+    
+    client.display();
+    
+    /*Admin admin(301, "AdminUser", "adminpass", 10000);
+    admin.display();
+
+    cout << "==================================\n" << endl;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*fileManager.addClient(client);
     fileManager.addEmployee(employee);
     fileManager.addAdmin(admin);
 
@@ -29,9 +70,9 @@ int main() {
     fileManager.getAllAdmins();
 
 
-    //fileManager.removeAllClients();
-    //fileManager.removeAllEmployees();
-    //fileManager.removeAllAdmins();
+    fileManager.removeAllClients();
+    fileManager.removeAllEmployees();
+    fileManager.removeAllAdmins();*/
 
     return 0;
 }

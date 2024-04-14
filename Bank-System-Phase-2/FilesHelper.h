@@ -19,7 +19,7 @@ public:
             file.close();
         }
         else {
-            cerr << "Unable to open file: " << fileName << endl;
+            cerr << " Unable to open file: " << fileName << endl;
         }
     }
 
@@ -31,7 +31,7 @@ public:
             file.close();
         }
         else {
-            cerr << "Unable to open file: " << fileName << endl;
+            cerr << " Unable to open file: " << fileName << endl;
         }
         return lastId;
     }
@@ -70,11 +70,11 @@ public:
             string line;
             while (getline(file, line)) {
                 Client client = Parser::parseToClient(line);
-                cout << "Client Info : " << endl;
-                cout << "ID : " << client.getID() << endl;
-                cout << "Name : " << client.getName() << endl;
-                cout << "Password : " << client.getPassword() << endl;
-                cout << "Balance : " << client.getBalance() << "$" << endl;
+                cout << " Client Info : " << endl;
+                cout << " ID : " << client.getID() << endl;
+                cout << " Name : " << client.getName() << endl;
+                cout << " Password : " << client.getPassword() << endl;
+                cout << " Balance : " << client.getBalance() << "$" << endl;
                 cout << "==================================\n" << endl;
             }
             file.close();
@@ -91,16 +91,16 @@ public:
             while (getline(file, line)) {
                 Employee employee = Parser::parseToEmployee(line);
                 cout << "Employee Info : " << endl;
-                cout << "ID : " << employee.getID() << endl;
-                cout << "Name : " << employee.getName() << endl;
-                cout << "Password : " << employee.getPassword() << endl;
-                cout << "Balance : " << employee.getSalary() << "$" << endl;
+                cout << " ID : " << employee.getID() << endl;
+                cout << " Name : " << employee.getName() << endl;
+                cout << " Password : " << employee.getPassword() << endl;
+                cout << " Balance : " << employee.getSalary() << "$" << endl;
                 cout << "==================================\n" << endl;
             }
             file.close();
         }
         else {
-            cout << "Unable to open file: Employee.txt" << endl;
+            cout << " Unable to open file: Employee.txt" << endl;
         }
     }
 
@@ -110,17 +110,17 @@ public:
             string line;
             while (getline(file, line)) {
                 Admin admin = Parser::parseToAdmin(line);
-                cout << "Admin Info : " << endl;
-                cout << "ID : " << admin.getID() << endl;
-                cout << "Name : " << admin.getName() << endl;
-                cout << "Password : " << admin.getPassword() << endl;
-                cout << "Balance : " << admin.getSalary() << "$" << endl;
+                cout << " Admin Info : " << endl;
+                cout << " ID : " << admin.getID() << endl;
+                cout << " Name : " << admin.getName() << endl;
+                cout << " Password : " << admin.getPassword() << endl;
+                cout << " Balance : " << admin.getSalary() << "$" << endl;
                 cout << "==================================\n" << endl;
             }
             file.close();
         }
         else {
-            cout << "Unable to open file: Admin.txt" << endl;
+            cout << " Unable to open file: Admin.txt" << endl;
         }
     }
 
