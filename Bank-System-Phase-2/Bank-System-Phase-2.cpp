@@ -11,27 +11,23 @@ int main() {
     FileManager fileManager;
 
     cout << "|<<<<WELCOME>>>>|\n" << endl;
-   
+    
     Client client(101, "Mohamed", "password", 2000);
-    client.display();
-    cout << "==================================\n" << endl;
-    
     Employee employee(201, "AbdElrahman", "password", 6000);
-    employee.display();
-    cout << "==================================\n" << endl;
-   
     Admin admin(301, "AdminUser", "adminpass", 10000);
-    admin.display();
+
     cout << "==================================\n" << endl;
-    
+
     fileManager.addClient(client);
     fileManager.addEmployee(employee);
     fileManager.addAdmin(admin);
+
     cout << "==================================\n" << endl;
 
     fileManager.getClients();
     fileManager.getEmployees();
     fileManager.getAdmins();
+
     cout << "==================================\n" << endl;
 
     fileManager.removeAllClients();

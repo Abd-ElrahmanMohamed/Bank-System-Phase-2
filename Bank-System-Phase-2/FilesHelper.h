@@ -41,7 +41,7 @@ public:
         if (file.is_open()) {
             file << client.getID() << "#" << client.getName() << "#" << client.getPassword() << "#" << client.getBalance() << endl;
             file.close();
-            cout << " Client added successfully." << endl;
+            cout << " File Clients.txt added successfully." << endl;
         }
         else {
             cout << " Unable to open Clients.txt for writing." << endl;
@@ -55,7 +55,7 @@ public:
         if (file.is_open()) {
             file << employee.getID() << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
             file.close();
-            cout << " Added successfully." << endl;
+            cout << " File " << fileName << " added successfully." << endl;
         }
         else {
             cout << " Error: Unable to open " << fileName << " for writing." << endl;
