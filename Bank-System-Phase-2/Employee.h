@@ -50,10 +50,18 @@ public:
 
     void listClients() {
         cout << "Clients:\n";
+<<<<<<< HEAD
         for (Client* client : clients) {
             cout << " ID : " << client->getID() << endl;
             cout << " Name : " << client->getName() << endl;
             cout << " Balance : " << client->getBalance() << "$" << endl;
+=======
+        for (auto& Client : clients) {
+            cout << " ID : " << Client.getID() << endl;
+            cout << " Name : " << Client.getName() << endl;
+            cout << " Balance : " << Client.getBalance() << "$" << endl;
+            cout << endl;
+>>>>>>> dddd25435d631e3bda553f0f38e226c6f4329b8d
         }
     }
 
