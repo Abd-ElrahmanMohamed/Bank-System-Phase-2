@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
-      <FullPath>C:\Users\Administrator\source\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe</FullPath>
-=======
       <FullPath>C:\Users\Administrator\source\repos\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe</FullPath>
->>>>>>> dddd25435d631e3bda553f0f38e226c6f4329b8d
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

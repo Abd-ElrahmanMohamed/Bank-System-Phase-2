@@ -9,7 +9,6 @@ class Admin : public Employee {
 private:
     //Attributes:
     vector<Employee*> employees;
-
 public:
     //Constructors:
     Admin(int id, string name, string password, double salary) : Employee(id, name, password, salary) {}
@@ -28,22 +27,21 @@ public:
     }
 
     void listEmployees() {
-        cout << " Employees : " << endl;
+        cout << " Employees " << name << " : " << endl;
         for (Employee* employee : employees) {
             employee->display();
         }
     }
-
-    void editEmplyee(int id, string name, string password, double Salary) {
+    void editEmployee(int id, string& name, string& password, double salary) {
         Employee* employee = searchEmployee(id);
         if (employee) {
             employee->setName(name);
             employee->setPassword(password);
             employee->setSalary(salary);
-            cout << " Employee details updated successfully." << endl;
+            cout << " Client details updated successfully." << endl;
         }
         else {
-            cout << " Client not found. " << endl;
+           cout << " Employee not found. " << endl;
         }
     }
 };

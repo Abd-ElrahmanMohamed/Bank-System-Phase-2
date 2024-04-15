@@ -41,27 +41,16 @@ public:
 
     Client* searchClient(int id) {
         for (Client* client : clients) {
-            if (client->getID() == id) {
+            if (client->getID() == id)
                 return client;
-            }
         }
         return nullptr;
     }
 
     void listClients() {
-        cout << "Clients:\n";
-<<<<<<< HEAD
+        cout << " Clients " << name << " : " << endl;
         for (Client* client : clients) {
-            cout << " ID : " << client->getID() << endl;
-            cout << " Name : " << client->getName() << endl;
-            cout << " Balance : " << client->getBalance() << "$" << endl;
-=======
-        for (auto& Client : clients) {
-            cout << " ID : " << Client.getID() << endl;
-            cout << " Name : " << Client.getName() << endl;
-            cout << " Balance : " << Client.getBalance() << "$" << endl;
-            cout << endl;
->>>>>>> dddd25435d631e3bda553f0f38e226c6f4329b8d
+            client->display();
         }
     }
 
@@ -71,11 +60,10 @@ public:
             client->setName(name);
             client->setPassword(password);
             client->setBalance(balance);
-                cout << " Client information updated successfully." << endl;
-            }
-            else{
-                cout << " Client not found." << endl;
-
+            cout << " Client details updated successfully." << endl;
+        }
+        else {
+            cout << " Client not found. " << endl;
         }
     }
 };
