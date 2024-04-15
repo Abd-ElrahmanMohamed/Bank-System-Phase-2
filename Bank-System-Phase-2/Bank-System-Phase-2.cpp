@@ -19,14 +19,16 @@ int main() {
    cout << "==================================\n" << endl;
 
     Employee employee(201, "AbdElrahman", "password", 6000);
-    employee.display();
+   /* employee.display();*/
 
     cout << "==================================\n" << endl;
     employee.addClient(client1);
     employee.addClient(client2);
 
+    cout << "==================================\n" << endl;
+
     employee.listClients();
-    employee.SearchClient(1);
+    employee.SearchClient(101);
 
     
    cout << "==================================\n" << endl;

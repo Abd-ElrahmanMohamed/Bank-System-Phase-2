@@ -52,6 +52,7 @@ public:
             cout << " ID : " << Client.getID() << endl;
             cout << " Name : " << Client.getName() << endl;
             cout << " Balance : " << Client.getBalance() << "$" << endl;
+            cout << endl;
         }
     }
 
