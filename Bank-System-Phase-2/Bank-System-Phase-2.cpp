@@ -1,7 +1,5 @@
 #include <iostream>
 #include <string>
-#include <fstream>
-#include <vector>
 #include "Client.h"
 #include "Employee.h"
 #include "Admin.h"
@@ -19,6 +17,7 @@ int main() {
     Admin admin(301, "AdminUser", "adminpass", 6000);
     admin.display();
     cout << "============================================================\n" << endl;
+
     FileManager fileManager;
     fileManager.addClient(client);
     fileManager.addEmployee(employee);
