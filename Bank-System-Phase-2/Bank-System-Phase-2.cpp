@@ -26,7 +26,7 @@ int main() {
     employee.addClient(client2);
 
     employee.listClients();
-    employee.SearchClient(1);
+    employee.searchClient(1);
 
     
    cout << "==================================\n" << endl;
