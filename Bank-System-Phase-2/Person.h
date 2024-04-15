@@ -8,6 +8,7 @@ protected:
     //Attributes:
     int id;
     string name, password;
+
 public:
     //Construtors:
     Person(int id, string name, string password) {

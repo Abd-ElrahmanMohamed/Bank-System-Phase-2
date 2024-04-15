@@ -1,9 +1,4 @@
-﻿  Admin.cpp
-  Bank-System-Phase-2.cpp
-  DataSourceInterface.cpp
-  Employee.cpp
+﻿  Bank-System-Phase-2.cpp
   FileManager.cpp
-  FilesHelper.cpp
-  Parser.cpp
   Generating Code...
   Bank-System-Phase-2.vcxproj -> C:\Users\Administrator\source\repos\Bank-System-Phase-2\x64\Debug\Bank-System-Phase-2.exe

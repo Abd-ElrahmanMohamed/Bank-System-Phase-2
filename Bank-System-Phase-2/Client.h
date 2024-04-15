@@ -8,6 +8,7 @@ class Client : public Person {
 private:
     //Attributes:
     double balance;
+
 public:
     //Constructors:
     Client(int id, string name, string password, double balance) : Person(id, name, password), balance(0) {

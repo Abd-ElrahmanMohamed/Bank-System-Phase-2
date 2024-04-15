@@ -10,7 +10,8 @@ class Employee : public Person {
 protected:
     //Attributs:
     double salary;
-    vector <Client> clients;
+    vector<Client*> clients;
+
 public:
     //Consttructors:
     Employee(int id, string name, string password, double salary) : Person(id, name, password), salary(0) {
@@ -27,46 +28,42 @@ public:
     double getSalary() {
         return salary;
     }
+
     //Methods:
     void display() {
         Person::display();
         cout << " Salary : " << getSalary() << "$" << endl;
     }
 
-    void addClient(Client& Client) {
-        clients.push_back (Client);
+    void addClient(Client& client) {
+        clients.push_back(&client);
     }
 
-    Client* SearchClient(int id) {
-        for (auto& Client : clients) {
-            if (Client.getID() == id) {
-                return& Client;
-            }
+    Client* searchClient(int id) {
+        for (Client* client : clients) {
+            if (client->getID() == id)
+                return client;
         }
         return nullptr;
     }
 
     void listClients() {
-        cout << "Clients:\n";
-        for (auto& Client : clients) {
-            cout << " ID : " << Client.getID() << endl;
-            cout << " Name : " << Client.getName() << endl;
-            cout << " Balance : " << Client.getBalance() << "$" << endl;
-            cout << endl;
+       cout << " Clients of Employee " << name << " : " << endl;
+        for (Client* client : clients) {
+            client->display();
         }
     }
 
     void editClient(int id, string name, string password, double balance) {
-        for (auto& Client : clients) {
-            if (Client.getID() == id) {
-                Client.setName(name);
-                Client.setPassword(password);
-                Client.setBalance(balance);
-                cout << " Client information updated successfully." << endl;
-            }
-            else
-                cout << " Client not found." << endl;
-            
+        Client* client = searchClient(id);
+        if (client) {
+            client->setName(name);
+            client->setPassword(password);
+            client->setBalance(balance);
+            cout << " Employee details updated successfully." << endl;
+        }
+        else {
+            cout << " Client not found. " << endl;
         }
     }
 };

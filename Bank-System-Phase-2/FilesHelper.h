@@ -94,7 +94,7 @@ public:
                 cout << " ID : " << employee.getID() << endl;
                 cout << " Name : " << employee.getName() << endl;
                 cout << " Password : " << employee.getPassword() << endl;
-                cout << " Balance : " << employee.getSalary() << "$" << endl;
+                cout << " Salary : " << employee.getSalary() << "$" << endl;
                 cout << "==================================\n" << endl;
             }
             file.close();
