@@ -19,7 +19,7 @@ public:
             file.close();
         }
         else {
-            cerr << " Unable to open file: " << fileName << endl;
+            cout << " Unable to open file: " << fileName << endl;
         }
     }
 
@@ -31,17 +31,17 @@ public:
             file.close();
         }
         else {
-            cerr << " Unable to open file: " << fileName << endl;
+            cout << " Unable to open file: " << fileName << endl;
         }
         return lastId;
     }
 
     static void saveClient(Client& client) {
-        int id = getLast("ClientLastId.txt") + 1;
+        int id = getLast("ClientLastId.txt")+1;
         saveLast("ClientLastId.txt", id);
-        ofstream file("Clients.txt", ios::app);
+        fstream file("Clients.txt", ios::app);
         if (file.is_open()) {
-            file << client.getID() << "#" << client.getName() << "#" << client.getPassword() << "#" << client.getBalance() << endl;
+            file << id << "#" << client.getName() << "#" << client.getPassword() << "#" << client.getBalance() << endl;
             file.close();
             cout << " File Clients.txt added successfully." << endl;
         }
@@ -55,7 +55,7 @@ public:
         saveLast(lastIdFile, id);
         ofstream file(fileName, ios::app);
         if (file.is_open()) {
-            file << employee.getID() << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
+            file << id << "#" << employee.getName() << "#" << employee.getPassword() << "#" << employee.getSalary() << endl;
             file.close();
             cout << " File " << fileName << " added successfully." << endl;
         }
@@ -125,11 +125,13 @@ public:
     }
 
     static void clearFile(string fileName, string lastIdFile) {
-        ofstream file(fileName,ios::trunc);
+        ofstream file(fileName,ios::out);
+        file.clear();
         file.close();
         cout << " File " << fileName << " cleared successfully." << endl;
 
-        ofstream idFile(lastIdFile, ios::trunc);
+        ofstream idFile(lastIdFile, ios::out);
+        file.clear();
         idFile.close();
         cout << " File " << lastIdFile << " cleared successfully." << endl;
     }
